@@ -1,8 +1,18 @@
+import Footer from "./views/Footer";
+import Header from "./views/Header";
+import Nav from "./views/Nav";
+import Specials from "./views/Specials";
+import Testemonials from "./views/Testemonials";
+
 const App = () => {
   return(
-    <div>
-      <h1>little lemon</h1>
-    </div>
+    <>
+      <Nav />
+      <Header />
+      <Specials />
+      <Testemonials />
+      <Footer />
+    </>
   )
 }
 
