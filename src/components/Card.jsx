@@ -33,7 +33,7 @@ const CardSty = styled.div`
 
   img {
     width: 100%;
-    height: 10rem;
+    height: 10rem;  
     border-radius: 5%;
   }
 `;
