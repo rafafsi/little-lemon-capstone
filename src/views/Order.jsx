@@ -1,7 +1,7 @@
 const Order = () => {
   return (
     <div>
-      <h2>Order online</h2>
+      <h2>Order onlineee</h2>
     </div>
   );
 };

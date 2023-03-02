@@ -5,8 +5,8 @@ import Home from "./views/Home";
 import NavBar from "./components/NavBar";
 import Order from "./views/Order";
 import About from "./views/About";
-import Reservation from "./views/Reservation";
 import Login from "./views/Login";
+import BookingForm from "./views/BookingForm";
 
 const App = () => {
   return(
@@ -16,7 +16,7 @@ const App = () => {
           <Routes>
             <Route exact path="/" element={ <Home />} />
             <Route path="/about" element={ <About />} />
-            <Route path="/reservation" element={ <Reservation />} />
+            <Route path="/booking" element={ <BookingForm />} />
             <Route path="/order" element={ <Order />} />
             <Route path="/login" element={ <Login />} />
           </Routes>

@@ -4,9 +4,9 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { GiRoundTable } from "react-icons/gi";
 import { MdRestaurantMenu } from "react-icons/md";
 
-const Button = ({ text, icon }) => {
+const Button = ({ text, icon, type }) => {
   return (
-    <ButtonSty role="button">
+    <ButtonSty role="button" type={type}>
       {text} 
       {icon === "delivery" ? <TbTruckDelivery /> : ""}
       {icon === "table" ? <GiRoundTable /> : ""}
