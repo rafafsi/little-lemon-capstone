@@ -17,19 +17,19 @@ const Specials = () => {
       <Grid>
         <Card
           plate="Greek Salad"
-          description="Lorem ipsum dolor sit amet, Ut enim ad minim veniam, quis nost ea commodo consequat"
+          description="Refreshing salad, made with tomato, lettuce, feta cheese, and olives. Dressed with salt, hot pepper, and olive oil."
           price="$ 12,80"
           src={greek}
         />
         <Card
           plate="Bruchetta"
-          description="Lorem ipsum dolor sit amet, Ut enim ad minim veniam, quis nost ea commodo consequat"
+          description="Toasted bread, topped with tomato, prosciutto, and cheese. Seasoned with salt and olive oil."
           price="$ 5,99"
           src={bruchetta}
         />
         <Card
           plate="Lemon Dessert"
-          description="Lorem ipsum dolor sit amet, Ut enim ad minim veniam, quis nost ea commodo consequat"
+          description="Fresh baked lemon bread coated in salt and sugar. Powdered in citrus and lemon zest."
           price="$ 5,00"
           src={lemon}
         />

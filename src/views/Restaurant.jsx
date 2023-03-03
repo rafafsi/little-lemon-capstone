@@ -9,13 +9,12 @@ const Restaurant = () => {
       </Head>
       <Grid>
         <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum."
+          Little Lemon opened in 1995 by two Italian brothers, Adrian and Mario.
+          Despite the city's diversity, the two brothers recognized the lack of
+          Mediterranean cuisine in Chicago, and were inspired to bring the
+          flavors of their hometown in Italy to the people of Chicago. The two
+          brothers continue to oversee the Little Lemon restaurant, nearly
+          thirty years later.
         </p>
         <img src={restaurant} alt="" />
       </Grid>

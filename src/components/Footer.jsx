@@ -6,6 +6,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiFillGooglePlusSquare } from "react-icons/ai";
 import { CgPhone } from "react-icons/cg";
+import { TiLocation } from "react-icons/ti";
 
 import styled from "styled-components";
 
@@ -41,7 +42,11 @@ const Footer = () => {
         <div>
           {<CgPhone />} <span>+99 99999-9999</span>
         </div>
+        <div>
+          {<TiLocation />} <span>2395 Maldove Way, Chicago Illinois</span>
+        </div>
       </div>
+
       <div>
         <h3>Conect with us:</h3>
         <SocialList>

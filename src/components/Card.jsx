@@ -28,6 +28,7 @@ const CardSty = styled.div`
   p {
     color: #495e57;
     margin: 1em 0 1em 0;
+    text-align: justify;
 
   }
 
@@ -56,6 +57,8 @@ const Title = styled.div`
   & h4 {
     color: #f4ce14;
     font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px #333333;
   }
 `;
 export default Card;

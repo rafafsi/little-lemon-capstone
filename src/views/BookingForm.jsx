@@ -41,6 +41,10 @@ const BookingForm = () => {
   
   const handleSubmit = (e) => {
     e.preventDefault()
+    setDate('')
+    setTime('')
+    setGuests('')
+    setOccasion('')
     console.log(infoBooking)
   }
 
