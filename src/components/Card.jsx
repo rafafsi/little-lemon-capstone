@@ -22,19 +22,23 @@ const Card = ({ plate, description, price, src }) => {
 const CardSty = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #edefee;
   border-radius: 5%;
+  margin: 1em 3em 0 3em;
+  min-width: 15em;
+  width: 15em;
+  background-color: rgba(73, 94, 87, 0.2);
 
   p {
     color: #495e57;
     margin: 1em 0 1em 0;
     text-align: justify;
-
   }
 
   img {
     width: 100%;
-    height: 10rem;  
+    height: 10rem;
     border-radius: 5%;
   }
 `;
@@ -51,14 +55,16 @@ const Title = styled.div`
 
   & h3 {
     font-weight: 400;
-    color: #333333;
+    color: #495e57;
   }
 
   & h4 {
     color: #f4ce14;
     font-weight: bold;
     font-size: 1.5em;
-    text-shadow: 1px 1px 2px #333333;
+    background-color: #495e57;
+    padding: 2px;
+    border-radius: 5px;
   }
 `;
 export default Card;

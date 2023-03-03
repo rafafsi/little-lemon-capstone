@@ -65,7 +65,7 @@ const FooterSty = styled.footer`
   background-color: #333333;
   color: #edefee;
   display: grid;
-  grid-template-columns: 10em 10em 18em 10em;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: 3fr;
   column-gap: 2em;
   row-gap: 2em;
@@ -76,11 +76,16 @@ const FooterSty = styled.footer`
   img {
     width: 4em;
     height: 7.5em;
+    padding-left: 5em;
   }
 
   h3 {
     padding-bottom: 0.5em;
     color: #f4ce14;
+  }
+
+  & > div {
+    padding-left: 2em;
   }
 `;
 

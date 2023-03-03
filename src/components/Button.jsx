@@ -7,7 +7,7 @@ import { MdRestaurantMenu } from "react-icons/md";
 const Button = ({ text, icon, type }) => {
   return (
     <ButtonSty role="button" type={type}>
-      {text} 
+      {text}
       {icon === "delivery" ? <TbTruckDelivery /> : ""}
       {icon === "table" ? <GiRoundTable /> : ""}
       {icon === "menu" ? <MdRestaurantMenu /> : ""}
@@ -19,13 +19,17 @@ const ButtonSty = styled.button`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 10em;
+  width: auto;
   background-color: #f4ce14;
-  padding: 0.5em;
+  padding: 0.3em;
   border-radius: 5px;
   border: none;
   color: #495e57;
-  font-size: 1em;
+  font-size: 20px;
+
+  * {
+    margin: 0.5em;
+  }
 
   &:hover {
     cursor: pointer;

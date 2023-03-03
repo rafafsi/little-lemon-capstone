@@ -1,7 +1,6 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../assets/logo.png";
-
 
 const Nav = () => {
   return (
@@ -30,27 +29,28 @@ const Nav = () => {
 
 const NavSty = styled.nav`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 2em;
 
   img {
     width: 10em;
     height: 3em;
+    padding: 0 3em 0 3em;
   }
 
   ul {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 
     li {
-        list-style: none;
-        padding: 1em;
-        font-family: "Karla", sans-serif;
-        font-weight: 600;
-      }
+      list-style: none;
+      padding: 1em;
+      font-family: "Karla", sans-serif;
+      font-weight: 600;
     }
-    `;
+  }
+`;
 
 const LinkSty = styled(Link)`
   text-decoration: none;
@@ -63,8 +63,6 @@ const LinkSty = styled(Link)`
     padding: 0.5em;
     transition: 0.5s;
   }
-
-
-`
+`;
 
 export default Nav;
