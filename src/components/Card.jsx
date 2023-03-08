@@ -52,13 +52,15 @@ const Title = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 2em;
 
-  & h3 {
-    font-weight: 400;
+  h3 {
+    font-weight: 600;
     color: #495e57;
+    margin: 0;
   }
 
-  & h4 {
+  h4 {
     color: #f4ce14;
     font-weight: bold;
     font-size: 1.5em;

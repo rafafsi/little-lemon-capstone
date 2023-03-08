@@ -3,6 +3,8 @@ import styled from "styled-components";
 import greek from "../assets/greeksalad.jpg";
 import lemon from "../assets/lemondessert.jpg";
 import bruchetta from "../assets/bruschetta.jpg";
+import moussaka from "../assets/moussaka.jpeg";
+
 import Card from "../components/Card";
 import Button from "../components/Button";
 
@@ -30,19 +32,24 @@ const Specials = () => {
           price="$ 5,00"
           src={lemon}
         />
+        <Card
+          plate="Moussaka"
+          description="Eggplant, ground meat, cheese, vegetables and seasonings.."
+          price="$ 19,90"
+          src={moussaka}
+        />
       </Grid>
     </Section>
   );
 };
 const Section = styled.section`
   background-color: #edefee;
-  /* padding: 0 3em 0 3em; */
-
   h1 {
     font-size: 3em;
     color: #495e57;
     font-weight: 200;
     padding: 1em 3em 1em 3em;
+    margin: 0;
   }
 
   & > button {

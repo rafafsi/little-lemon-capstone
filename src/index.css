@@ -1,7 +1,31 @@
-* {
+html,
+body {
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Karla", sans-serif;
+  overflow-x: hidden;
+  font-family: "Karla", sans-serif;  
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #495e57; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f4ce14; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d6c04d; 
 }
 
 h1 {

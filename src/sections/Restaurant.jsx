@@ -17,11 +17,9 @@ const Restaurant = () => {
           continue to oversee the Little Lemon restaurant, nearly thirty years
           later.
         </p>
-        <Grid>
-          <img src={rest2} alt="Cheff Mario, one of the owners." />
-          <img src={rest1} alt="Main restaurant saloon" />
+        
           <img src={rest3} alt="The brothers Adrian and Mario" />
-        </Grid>
+        
       </Content>
     </Section>
   );
@@ -39,38 +37,30 @@ const Section = styled.section`
     color: #495e57;
     font-weight: 200;
     padding: 1em 3em 1em 3em;
+    margin: 0;
   }  
 `;
 
 const Content = styled.div`
   width: 100%;
+  display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-  padding: 1em 12em 1em 12em;   
+  padding-bottom: 2em;
 
   p {
     text-align: justify;
-    width: 80%;
+    width: 30%;
+    padding: 2em;
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  img {
+    height: 15em;
+    border-radius: 16px;
   }
   
 `
-
-const Grid = styled.div`
-  display: grid;
-  width: 100%;
-  justify-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  column-gap: 2em;
-  row-gap: .5em;
-  justify-content: center;
-  padding: 4em 0em 4em 0em;
-
-  * {
-    width: fit-content;
-    height: 15em;
-    border-radius: 5px;
-  }
-`;
 
 export default Restaurant;

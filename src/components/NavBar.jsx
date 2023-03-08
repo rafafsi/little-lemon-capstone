@@ -31,7 +31,6 @@ const NavSty = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em;
 
   img {
     width: 10em;

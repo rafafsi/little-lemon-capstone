@@ -24,12 +24,10 @@ const HeaderSty = styled.header`
   height: auto;
   display: flex;
   padding: 4em;
-  justify-content: space-between;
-  align-items: left;
-  background-image: url(${headerPic});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  justify-content: space-around;
+  background: rgb(55,74,68);
+background: radial-gradient(circle, rgba(55,74,68,1) 48%, rgba(141,156,151,1) 100%);
+  align-items: center;
 
   img {
     height: 20em;
@@ -38,12 +36,13 @@ const HeaderSty = styled.header`
 
   h2 {
     font-family: "Markazi Text", serif;
-    font-size: 5em;
+    font-size: 8em;
     color: #f4ce14;
     text-shadow: 1px 2px 2px #000;
+    margin:0;
 
     span {
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: 100;
     }
   }
@@ -51,10 +50,6 @@ const HeaderSty = styled.header`
     width: 40vw;
     margin-bottom: 1em;
     color: #f4ce14;
-    background-color: #495e57;
-    opacity: 0.9;
-    padding: 1em;
-    border-radius: 16px;
   }
 `;
 
