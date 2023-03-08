@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+<h1 align="center">Little Lemon Restaurant</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2 align="center">A Front-end Restaurant App.</h2>
 
-## Available Scripts
+<br />
+<p align="center">
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="Reactjs" />
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+    <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="Javascript" />
+    <img src="https://img.shields.io/badge/React Responsive Carousel-FFFFFF?style=for-the-badge&logo=react-responsive-carousel&logoColor=000000" alt="React Responsive Carousel" />
+</p>
 
-In the project directory, you can run:
+<p align="center"> 
+    <br />&#10023;
+    <a href="https://github.com/rafafsi/little-lemon-capstone/issues">Report Bug</a>   &#10023;
+  </p>
 
-### `npm start`
+  <p align="center"> 
+    Little Lemon Restaurant, a family run Mediterranean restaurant located in Chicago, Illinois. Please come and enjoy our wide selection of authentic Mediterranean cuisine!
+  </p>
+  
+  ![little-lemon-mockup](https://user-images.githubusercontent.com/86061018/223877263-0c0a5f2a-2f73-4f0e-9238-4a9e67757f51.png)
+  
+<br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Pages
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Home
+- About
+- Menu
+- Reservations
+- Order
+- Login
+  <br />
 
-### `npm test`
+## Glimpses:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<table>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/86061018/223878990-b88169b3-8f1f-4d20-a5b0-9bff3b55007d.png" alt="home-page-1" /></td>
+    <td><img src="https://user-images.githubusercontent.com/86061018/223877324-3b30ef35-af15-421b-9ef5-1d90d5e18c92.png" alt="home-page-2" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/86061018/223877346-16056eca-315a-4877-8586-bbfbe5c0b398.png" alt="home-page-3" /></td>
+    <td><img src="https://user-images.githubusercontent.com/86061018/223879168-4805253d-fbfd-470d-88ed-6b865b6524fe.png" alt="reservation" /></td>
+  </tr>
+</table>
 
-### `npm run build`
+## Quick Start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```shell
+$ git clone https://github.com/rafafsi/little-lemon-capstone.git
+$ cd little-lemon-captsone
+$ npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Launch the app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Use the following command to run the app in your localhost.
 
-### `npm run eject`
+```
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contact
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you want to contact me, you can reach me through below handles.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+[![linkedin](https://img.shields.io/badge/RAFAELA_INÁCIO-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rafaelafsinacio/)
+[![Github](https://img.shields.io/badge/RAFAELA_INÁCIO-20232A?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/rafafsi)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Show your support
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Give it a ⭐️ if you like it.
