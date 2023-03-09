@@ -1,15 +1,19 @@
 import { useState } from "react";
 import styled from "styled-components";
+
 import Button from "../components/Button";
 import { Input, Label, Select, TextArea } from "../components/InputsForm";
 import Message from "../components/Message";
+import { useForm } from "../context/FormContext";
 
 const BookingForm = () => {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [guests, setGuests] = useState("");
   const [occasion, setOccasion] = useState("");
-  const [message, setMessage] = useState(false)
+  const [message, setMessage] = useState(false);
+
+  const { availableTimes, occasions, preferences } = useForm();
 
   const [infoBooking, setInfoBooking] = useState({
     date,
@@ -17,24 +21,6 @@ const BookingForm = () => {
     guests,
     occasion,
   });
-
-  const availableTimes = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
-  const occasions = [
-    "Birthday",
-    "Anniversary",
-    "Meeting",
-    "Retirement Dinner",
-    "Weddings",
-    "Engagement",
-    "Happy hour",
-  ];
-
-  const preferences = [
-    "None",
-    "Indoor",
-    "Outdoor (Patio)",
-    "Outdoor (Sidewalk)",
-  ];
 
   const handleChange = (e) => {
     setInfoBooking({ ...infoBooking, [e.target.id]: e.target.value });
@@ -46,7 +32,7 @@ const BookingForm = () => {
     setTime("");
     setGuests("");
     setOccasion("");
-    setMessage(true)
+    setMessage(true);
     console.log(infoBooking, message);
   };
 
@@ -54,7 +40,9 @@ const BookingForm = () => {
     <Container>
       <h1>Book your reservation!</h1>
       <Form onSubmit={handleSubmit}>
-        {message && <Message status="success" msg={`Your booking is confirmed!`}/>}
+        {message && (
+          <Message status="success" msg={`Your booking is confirmed!`} />
+        )}
         <Label htmlFor="date" text="Choose date" />
         <Input type="date" id="date" handleChange={handleChange} required />
 

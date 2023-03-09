@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import Order from "./pages/Order";
 import About from "./pages/About";
 import Login from "./pages/Login";
-import BookingForm from "./pages/BookingForm";
+import Booking from "./pages/Booking";
 
 const App = () => {
   return (
@@ -17,7 +17,7 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/booking" element={<BookingForm />} />
+          <Route path="/booking" element={<Booking />} />
           <Route path="/order" element={<Order />} />
           <Route path="/login" element={<Login />} />
         </Routes>
