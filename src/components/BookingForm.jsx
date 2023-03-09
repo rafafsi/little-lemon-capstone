@@ -6,16 +6,26 @@ import { Input, Label, Select, TextArea } from "../components/InputsForm";
 import Message from "../components/Message";
 import { useForm } from "../context/FormContext";
 
-const BookingForm = () => {
+const BookingForm = ({ availableTimes, updateTimes }) => {
+  const [firstName, setFirstName] = useState("");
+  const [surname, setSurname] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [guests, setGuests] = useState("");
   const [occasion, setOccasion] = useState("");
   const [message, setMessage] = useState(false);
 
-  const { availableTimes, occasions, preferences } = useForm();
+  const [finalTime, setFinalTime] = useState(availableTimes);
+
+  const { occasions, preferences } = useForm();
 
   const [infoBooking, setInfoBooking] = useState({
+    firstName,
+    surname,
+    email,
+    phone,
     date,
     time,
     guests,
@@ -23,17 +33,36 @@ const BookingForm = () => {
   });
 
   const handleChange = (e) => {
-    setInfoBooking({ ...infoBooking, [e.target.id]: e.target.value });
+    if (e.target.id == "date") {
+      setInfoBooking({ ...infoBooking, [e.target.id]: e.target.value });
+      let stringfy = e.target.value;
+      const date = new Date(stringfy);
+
+      updateTimes(date);
+
+      setFinalTime(availableTimes);
+    } else {
+      setInfoBooking({ ...infoBooking, [e.target.id]: e.target.value });
+    }
   };
+
+  const clearFields = (event) => {
+    Array.from(event.target).forEach((e) => (e.value = ""))
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    clearFields(e)
+    setFirstName("");
+    setSurname("");
+    setEmail("");
+    setPhone("");
     setDate("");
     setTime("");
     setGuests("");
     setOccasion("");
     setMessage(true);
-    console.log(infoBooking, message);
+    console.log(infoBooking);
   };
 
   return (
@@ -43,13 +72,36 @@ const BookingForm = () => {
         {message && (
           <Message status="success" msg={`Your booking is confirmed!`} />
         )}
+
+        <Label htmlFor="firstName" text="First Name" />
+        <Input
+          type="text"
+          id="firstName"
+          handleChange={handleChange}
+          required
+        />
+
+        <Label htmlFor="surname" text="Surname" />
+        <Input type="text" id="surname" handleChange={handleChange} required />
+
+        <Label htmlFor="email" text="E-mail" />
+        <Input type="email" id="email" handleChange={handleChange} required />
+
+        <Label htmlFor="phone" text="Contact number" />
+        <Input
+          type="tel"
+          id="phone"
+          handleChange={handleChange}
+          placeholder="(xxx)-xxx-xxxx"
+        />
+
         <Label htmlFor="date" text="Choose date" />
         <Input type="date" id="date" handleChange={handleChange} required />
 
         <Label htmlFor="time" text="Choose time" />
         <Select
           id="time"
-          data={availableTimes}
+          data={finalTime}
           handleChange={handleChange}
           required
         />
