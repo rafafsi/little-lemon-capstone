@@ -43,7 +43,7 @@
   </tr>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/86061018/223877346-16056eca-315a-4877-8586-bbfbe5c0b398.png" alt="home-page-3" /></td>
-    <td><img src="https://user-images.githubusercontent.com/86061018/223879168-4805253d-fbfd-470d-88ed-6b865b6524fe.png" alt="reservation" /></td>
+    <td><img src="https://user-images.githubusercontent.com/86061018/224065984-de6768d7-a3b9-4bb4-985f-bd22d422d64b.png" alt="reservation" /></td>
   </tr>
 </table>
 
